@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mustafa Deniz | Full Stack Yazılım Geliştirici</title>
+  <meta name="description" content="Mustafa Deniz — Profesyonel Yazılım Geliştirici, B2B &amp; B2C Çözüm Mimarı. Geleceğin dijital çözümlerini kodluyorum.">
+  <meta name="theme-color" content="#03040d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mustafa Deniz | Full Stack Yazılım Geliştirici">
+  <meta property="og:description" content="Geleceğin dijital çözümlerini kodluyorum. B2B &amp; B2C Çözüm Mimarı.">
+  <meta property="og:image" content="https://lldenizs.github.io/profil.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23b29bff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2305060f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='url(%23g)'%3EMD%3C/text%3E%3C/svg%3E">
+
+  <!-- JS yüklenmezse içerik gizli kalmasın diye animasyonlar yalnızca .js sınıfıyla devreye girer -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== İkon seti (SVG sprite) ====== -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-phone-device" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+
+  <!-- ====== Arka plan katmanı ====== -->
+  <div class="bg" aria-hidden="true">
+    <span class="bg__orb bg__orb--violet"></span>
+    <span class="bg__orb bg__orb--blue"></span>
+    <span class="bg__orb bg__orb--cyan"></span>
+    <span class="bg__grid"></span>
+    <canvas class="bg__dust" id="dust"></canvas>
+    <canvas class="bg__canvas" id="particles"></canvas>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ====== Navigasyon ====== -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#anasayfa" aria-label="Mustafa Deniz — Ana sayfa">
+      <span class="nav__logo">MD</span>
+      <span class="nav__name">Mustafa Deniz</span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Ana menü">
+      <a class="nav__link is-active" href="#anasayfa">Ana Sayfa</a>
+      <a class="nav__link" href="#hakkimda">Hakkımda</a>
+      <a class="nav__link" href="#projeler">Projeler</a>
+      <a class="nav__link" href="#iletisim">İletişim</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="#iletisim">İletişime Geç</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ====== 1. Hero ====== -->
+    <section class="hero" id="anasayfa">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="pill reveal"><span class="pill__dot"></span>Full Stack Yazılım Geliştiricisi</p>
+
+          <h1 class="hero__title reveal" style="--d:.08s">
+            <span class="hero__hello">Merhaba, Ben <span class="hero__name">Mustafa Deniz.</span></span>
+            <span class="hero__tagline">Geleceğin <span class="grad-text">Dijital Çözümlerini</span> Kodluyorum.</span>
+          </h1>
+
+          <p class="hero__subtitle reveal" style="--d:.16s">
+            <span>Profesyonel Yazılım Geliştirici</span>
+            <span class="hero__sep" aria-hidden="true">|</span>
+            <span>B2B &amp; B2C Çözüm Mimarı</span>
+          </p>
+
+          <p class="hero__typed reveal" style="--d:.22s" aria-hidden="true">
+            <span class="hero__prompt">&gt;</span><span id="typed"></span><span class="hero__caret"></span>
+          </p>
+
+          <div class="hero__actions reveal" style="--d:.3s">
+            <a class="btn btn--primary" href="#projeler">Projelerimi İncele <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#iletisim"><svg class="icon"><use href="#i-mail"/></svg>Benimle İletişime Geç</a>
+          </div>
+        </div>
+
+        <!-- Kara delik: blackhole.js gerçek zamanlı çizer (WebGL). WebGL yoksa CSS yedeği görünür. -->
+        <div class="hero__visual reveal" style="--d:.2s" aria-hidden="true">
+          <div class="blackhole" id="blackhole">
+            <canvas class="blackhole__canvas" id="blackholeCanvas"></canvas>
+            <span class="blackhole__fallback"></span>
+          </div>
+          <span class="float-chip float-chip--a"><svg class="icon"><use href="#i-code"/></svg>Full Stack</span>
+          <span class="float-chip float-chip--b"><svg class="icon"><use href="#i-layers"/></svg>B2B &amp; B2C</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#hakkimda" aria-label="Hakkımda bölümüne kaydır"><span></span></a>
+    </section>
+
+    <!-- ====== 2. Hakkımda & Öğrenim ====== -->
+    <section class="section" id="hakkimda">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">01 · Hakkımda</span>
+          <h2>Hakkımda &amp; <span class="grad-text">Öğrenim</span></h2>
+        </header>
+
+        <div class="about">
+          <div class="about__card glass spotlight reveal">
+            <h3 class="block-title"><svg class="icon"><use href="#i-code"/></svg>Profesyonel Özet</h3>
+            <p class="about__lead">Halihazırda birçok farklı sektörden işletme ile aktif olarak çalışmakta, onların dijital dönüşümlerine liderlik eden yenilikçi ve ölçeklenebilir yazılımlar üretmekteyim.</p>
+
+            <ul class="focus">
+              <li>
+                <span class="focus__icon"><svg class="icon"><use href="#i-briefcase"/></svg></span>
+                <div>
+                  <h4>B2B Çözümler</h4>
+                  <p>İşletmeler arası stok, sipariş ve yönetim platformları.</p>
+                </div>
+              </li>
+              <li>
+                <span class="focus__icon"><svg class="icon"><use href="#i-phone-device"/></svg></span>
+                <div>
+                  <h4>B2C Uygulamalar</h4>
+                  <p>Son kullanıcıya dokunan mobil ve web deneyimleri.</p>
+                </div>
+              </li>
+              <li>
+                <span class="focus__icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+                <div>
+                  <h4>Ölçeklenebilir Mimari</h4>
+                  <p>Büyümeye hazır, sürdürülebilir yazılım altyapıları.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Teknolojiler: kendi yığınına göre düzenle -->
+            <p class="chips-label">Teknolojiler</p>
+            <ul class="chips">
+              <li class="chip">.NET / C#</li>
+              <li class="chip">Flutter / Dart</li>
+              <li class="chip">SQL Server</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Docker</li>
+              <li class="chip">REST API</li>
+            </ul>
+          </div>
+
+          <div class="education">
+            <h3 class="block-title reveal"><svg class="icon"><use href="#i-cap"/></svg>Öğrenim</h3>
+
+            <ol class="timeline">
+              <li class="timeline__item glass spotlight reveal" style="--d:.05s">
+                <span class="timeline__date">Devam ediyor</span>
+                <h4>Uluslararası Karabük Üniversitesi</h4>
+                <p class="timeline__degree">Yazılım Mühendisliği · 3. Sınıf</p>
+                <p class="timeline__desc">Yazılım Mühendisliği bölümünde 3. sınıf öğrencisi olarak öğrenimime devam ediyorum.</p>
+              </li>
+              <li class="timeline__item glass spotlight reveal" style="--d:.15s">
+                <span class="timeline__date">Sertifikalar</span>
+                <h4>Kurs Sertifikaları</h4>
+                <p class="timeline__desc">Çeşitli kurslardan aldığım sertifikalarım bulunmaktadır.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 3. Projelerim ====== -->
+    <section class="section" id="projeler">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">02 · Projelerim</span>
+          <h2>Seçili <span class="grad-text">Projeler</span></h2>
+          <p class="section__lead">B2B ve son kullanıcı odaklı geliştirdiğim çözümler.</p>
+        </header>
+
+        <div class="projects">
+
+          <!-- Kartlarda yalnızca kısa özet durur. "Devamını Oku" içeriği projects.js > PROJECTS
+               içindedir ve düğmedeki data-project anahtarıyla eşleşir. -->
+
+          <!-- Proje 1: Özmiş Kuyumculuk -->
+          <article class="project project--gold glass tilt reveal">
+            <div class="project__cover" aria-hidden="true">
+              <div class="mock mock--dash">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Yönetim Paneli</span></div>
+                <div class="mock__body">
+                  <div class="mock__side"><b class="is-on"></b><b></b><b></b><b></b><b></b></div>
+                  <div class="mock__main">
+                    <div class="mock__tiles"><span></span><span></span><span></span></div>
+                    <div class="mock__chart">
+                      <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:80%"></i>
+                      <i style="--h:56%"></i><i style="--h:92%"></i><i style="--h:70%"></i><i style="--h:84%"></i>
+                    </div>
+                    <div class="mock__rows"><span></span><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project__emblem"><svg class="icon"><use href="#i-gem"/></svg></span>
+            </div>
+
+            <div class="project__body">
+              <ul class="project__types" aria-label="Kategori">
+                <li class="project__type">Kuyumculuk Yönetim Sistemi</li>
+                <li class="project__type">Admin Paneli</li>
+                <li class="project__type">Mobil Uygulama</li>
+              </ul>
+              <h3>Özmiş Kuyumculuk</h3>
+              <p>Kuyumcu işletmeleri için geliştirilmiş kapsamlı bir dijital yönetim ekosistemi. Stok, müşteri, borç ve emanet işlemlerini tek merkezden yönetin; müşterilerinize canlı altın fiyatları, işlem geçmişi ve anlık bildirim imkânı sunun.</p>
+              <ul class="tags" aria-label="Öne çıkan özellikler">
+                <li>İşletme Yönetimi</li>
+                <li>Stok ve Emanet Takibi</li>
+                <li>Dijital Müşteri Defteri</li>
+                <li>Canlı Altın Fiyatları</li>
+                <li>Anlık Bildirimler</li>
+              </ul>
+              <div class="project__footer">
+                <button class="project__more" type="button" data-project="ozmis" aria-haspopup="dialog" aria-label="Devamını Oku: Özmiş Kuyumculuk">Devamını Oku <svg class="icon"><use href="#i-arrow"/></svg></button>
+                <ul class="stores" aria-label="Özmiş Kuyumcu uygulamasının yer aldığı mağazalar">
+                  <li class="store-badge"><svg class="icon icon--fill"><use href="#i-apple"/></svg>App Store</li>
+                  <li class="store-badge"><svg class="icon icon--fill"><use href="#i-play"/></svg>Google Play</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proje 2: Avukat Cebimde -->
+          <article class="project project--blue glass tilt reveal" style="--d:.12s">
+            <div class="project__cover" aria-hidden="true">
+              <div class="mock mock--duo">
+                <div class="mock__browser">
+                  <div class="mock__bar"><i></i><i></i><i></i><span>Sözleşme Analizi</span></div>
+                  <div class="mock__list"><span></span><span class="is-risk"></span><span></span><span class="is-risk"></span><span></span></div>
+                </div>
+                <div class="mock__phone">
+                  <span class="mock__notch"></span>
+                  <div class="mock__chat-head"><span class="mock__avatar"><svg class="icon"><use href="#i-scale"/></svg></span><b></b></div>
+                  <span class="bubble"></span>
+                  <span class="bubble bubble--out"></span>
+                  <span class="bubble bubble--short"></span>
+                  <span class="bubble bubble--out bubble--short"></span>
+                  <span class="bubble bubble--tall"></span>
+                  <span class="bubble bubble--out"></span>
+                  <span class="bubble bubble--short"></span>
+                  <span class="bubble bubble--out bubble--short"></span>
+                </div>
+              </div>
+              <span class="project__emblem"><svg class="icon"><use href="#i-scale"/></svg></span>
+            </div>
+
+            <div class="project__body">
+              <ul class="project__types" aria-label="Kategori">
+                <li class="project__type">Yapay Zekâ</li>
+                <li class="project__type">Hukuk Teknolojileri</li>
+                <li class="project__type">Mobil ve Web Uygulaması</li>
+              </ul>
+              <h3>Avukat Cebimde</h3>
+              <p>Yapay zekâ destekli kişisel hukuk asistanı. Hukuki sorunlarınızı analiz edin, profesyonel dilekçeler hazırlayın, sözleşmelerdeki riskli maddeleri tespit edin ve önemli hukuki tarihlerinizi tek yerden takip edin.</p>
+              <ul class="tags" aria-label="Öne çıkan özellikler">
+                <li>AI Hukuk Asistanı</li>
+                <li>Dilekçe Oluşturma</li>
+                <li>Sözleşme Analizi</li>
+                <li>Türk Hukuku</li>
+                <li>Akıllı Hatırlatıcı</li>
+              </ul>
+              <div class="project__footer">
+                <button class="project__more" type="button" data-project="avukat" aria-haspopup="dialog" aria-label="Devamını Oku: Avukat Cebimde">Devamını Oku <svg class="icon"><use href="#i-arrow"/></svg></button>
+                <ul class="stores" aria-label="Uygulamanın yer aldığı mağazalar">
+                  <li class="store-badge"><svg class="icon icon--fill"><use href="#i-apple"/></svg>App Store</li>
+                  <li class="store-badge"><svg class="icon icon--fill"><use href="#i-play"/></svg>Google Play</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 4. İletişim ====== -->
+    <section class="section" id="iletisim">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">03 · İletişim</span>
+          <h2>Birlikte <span class="grad-text">Çalışalım</span></h2>
+          <p class="section__lead">Aklınızda bir proje ya da dijitalleştirmek istediğiniz bir süreç mi var? Formu doldurun, konuşalım.</p>
+        </header>
+
+        <div class="contact">
+          <!-- Form, mesajı ziyaretçinin e-posta uygulamasında hazır taslak olarak açar (script.js). -->
+          <form class="form glass reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="ad">Ad</label>
+                <input id="ad" name="ad" type="text" autocomplete="given-name" placeholder="Adınız" required>
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="soyad">Soyad</label>
+                <input id="soyad" name="soyad" type="text" autocomplete="family-name" placeholder="Soyadınız" required>
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">E-posta</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="ornek@eposta.com" required>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="mesaj">Mesaj</label>
+              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Projenizden kısaca bahsedin…" required></textarea>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">Mesajı Gönder <svg class="icon"><use href="#i-send"/></svg></button>
+          </form>
+
+          <aside class="contact-card glass spotlight reveal" style="--d:.12s" aria-label="İletişim bilgileri">
+            <div class="contact-card__head">
+              <img class="contact-card__avatar" src="profil.jpg" alt="" width="64" height="64" loading="lazy">
+              <div>
+                <h3>Mustafa Deniz</h3>
+                <p>Full Stack Yazılım Geliştirici</p>
+              </div>
+            </div>
+
+            <ul class="contact-list">
+              <li>
+                <a href="tel:+905456249711">
+                  <span class="contact-list__icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+                  <span class="contact-list__text"><small>Telefon</small><strong>+90 545 624 97 11</strong></span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mustafad2ed48@gmail.com" id="contactEmail">
+                  <span class="contact-list__icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+                  <span class="contact-list__text"><small>E-posta</small><strong>mustafad2ed48@gmail.com</strong></span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="socials">
+              <span class="socials__label">Bağlantılar</span>
+              <a class="social" href="#" aria-label="LinkedIn" data-soon="LinkedIn bağlantısı yakında eklenecek."><svg class="icon icon--fill"><use href="#i-linkedin"/></svg></a>
+              <a class="social" href="https://github.com/lldenizs" target="_blank" rel="noopener noreferrer" aria-label="GitHub (yeni sekmede açılır)"><svg class="icon icon--fill"><use href="#i-github"/></svg></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Mustafa Deniz. Tüm hakları saklıdır.</p>
+      <a class="footer__top" href="#anasayfa">Yukarı çık <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- Proje detay penceresi: tüm projeler bu tek pencereyi kullanır, içeriğini projects.js doldurur -->
+  <dialog class="modal" id="projectModal" aria-labelledby="projectModalTitle">
+    <div class="modal__panel">
+      <header class="modal__head">
+        <div>
+          <p class="modal__eyebrow" data-modal-eyebrow></p>
+          <h2 class="modal__title" id="projectModalTitle"></h2>
+          <p class="modal__subtitle" data-modal-subtitle></p>
+        </div>
+        <button class="modal__close" type="button" data-modal-close aria-label="Pencereyi kapat"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <div class="modal__body" data-modal-body tabindex="0" role="region" aria-label="Proje detayları"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+  <!-- Uzay atmosferi: harici kütüphane yok, ikisi de bağımsız çalışır -->
+  <script src="starfield.js" defer></script>
+  <script src="blackhole.js" defer></script>
+</body>
+</html>
